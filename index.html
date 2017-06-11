@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevTools</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header id="header-container">
+            <div class="logo-container">
+                <a href="https://platzi.com/" class="Header-logo">
+                    <img src="img/devtools-logo.png" alt="Platzi.com" width="auto" height="36px">
+                </a>
+            </div>
+        </header>
+        <div class="header-container search-container">
+            <div class="search-input">
+                <div class="row">
+                    <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
+                         <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar Herramienta..">
+                            <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search fa-fw"></i></button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+        <div class="header-container body-container">
+            <div class="container">
+                <div class="row tools-container">
+                    <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-2  col-lg-12 col-lg-offset-0 ">
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://nodejs.org/en/" target="_blank"><img src="img/node.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Node.js</p>
+                               <p class="app-link">https://nodejs.org/en</p>
+                             </div>
+                             <div class="box-footer">
+                                <img id="heart" onclick="liked" class="like" src="img/heart-icon-off.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"> 
+                             <a href="https://atom.io/" target="_blank"><figure><img src="img/atom.png" alt="" width="197px" height="153px" class="img-logo"></figure></a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Atom.</p>
+                               <p class="app-link">https://atom.io</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://github.com/" target="_blank"><img src="img/github.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">GitHub.</p>
+                               <p class="app-link">https://github.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://babeljs.io/" target="_blank"><img src="img/babel.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Babel.</p>
+                               <p class="app-link">https://babeljs.io/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://materializecss.com/" target="_blank"><img src="img/materialize.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Materialize.</p>
+                               <p class="app-link">http://materializecss.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.invisionapp.com/" target="_blank"><img src="img/invision.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Invision.</p>
+                               <p class="app-link">https://www.invisionapp.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://stripe.com/" target="_blank"><img src="img/stripe.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Stripe.</p>
+                               <p class="app-link">https://stripe.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.npmjs.com/" target="_blank"><img src="img/npm.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Npm.</p>
+                               <p class="app-link">https://www.npmjs.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://expressjs.com/" target="_blank"><img src="img/express.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Express.js</p>
+                               <p class="app-link">http://expressjs.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://gulpjs.com/" target="_blank"><img src="img/gulp.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Gulp.js</p>
+                               <p class="app-link">http://gulpjs.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://getbootstrap.com/" target="_blank"><img src="img/bootstrap.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Bootstrap.</p>
+                               <p class="app-link">http://getbootstrap.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://yarnpkg.com/lang/en/" target="_blank"><img src="img/yarn.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Yarn.</p>
+                               <p class="app-link">https://yarnpkg.com/lang/en/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.sketchapp.com/" target="_blank"><img src="img/sketch.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Sketch.</p>
+                               <p class="app-link">https://www.sketchapp.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.fiftythree.com/" target="_blank"><img src="img/fiftythree.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Fiftythree.</p>
+                               <p class="app-link">https://www.fiftythree.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://www.colourlovers.com/" target="_blank"><img src="img/colourlovers.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Colourlovers.</p>
+                               <p class="app-link">http://www.colourlovers.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                         <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://unsplash.com/" target="_blank"><img src="img/unsplash.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Unsplash.</p>
+                               <p class="app-link">https://unsplash.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="http://foundation.zurb.com/" target="_blank"><img src="img/foundation.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Foundation.</p>
+                               <p class="app-link">http://foundation.zurb.com/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.designer.io/" target="_blank"><img src="img/gravit.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Gravit Designer.</p>
+                               <p class="app-link">https://www.designer.io/</p>
+                             </div>
+                             <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+                        <div class="panel panel-default">
+                             <div class="panel-body"><a href="https://www.sublimetext.com/" target="_blank"><img src="img/sublime.png" alt="" class="img-logo"> </a> </div>
+                             <div class="panel-footer">
+                               <p class="app-name">Sublime Text.</p>
+                               <p class="app-link">https://www.sublimetext.com/</p>
+                             </div>
+                            <div class="box-footer">
+                                <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
+                             </div>
+                        </div>
+
+
+                       
+                    
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-leyend">DevTools by Alfredo M.</p>
+            </div>
+            
+        </footer>
+
+        </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var heart = document.getElementById('heart');
+        heart.addEventListener('click', liked)
+        
+
+        function liked(){
+        heart.src="img/heart-icon-on.png";
+        }
+        
+
+        function disliked(){
+        heart.src="img/heart-icon-off.png";
+        }
+
+
+
+
+    
+    
+        
+    </script>
+    
+
+</html>
