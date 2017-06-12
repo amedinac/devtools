@@ -1,8 +1,6 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-
-
 }
 
 #header-container{
@@ -11,11 +9,6 @@ body {
     width: 100%;
     display: table;
 }
-
-#header-container .container{
-    
-}
-
 
 
 .logo-container{
@@ -30,30 +23,11 @@ body {
     height: 67px;
     position: relative;
     margin:auto;
-
 }
 
 .search-input{
     margin: 33px auto;
-
 }
-
-/*.tools-container{
-    background-color:#f9f9f9;
-    display: block;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    border:1px solid red;
-}
-
-
-.tools-container{
-    position: absolute;
-    margin: 0px 75px 0px 75px;
-    width: auto;
-    height: auto;
-}*/
 
 /*toolbox*/
 .body-container{
@@ -63,9 +37,7 @@ body {
 }
 
 .tools-container{
-
     background-color: #F3EFEC;
-
 }
 
 .panel.panel-default{
@@ -80,9 +52,7 @@ body {
     border-style: none;
     border-bottom-left-radius:15px; 
     border-bottom-right-radius:15px;
-
 }
-
 
 .panel-body {
     height: 160px;
@@ -98,7 +68,6 @@ body {
     border-top-left-radius:15px; 
     border-top-right-radius:15px;
     border-bottom: none;
-
 }
 
 .panel-footer{
@@ -109,7 +78,6 @@ body {
     border-right: 1px solid #CCCCCC;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-
 }
 
 .app-name{
@@ -133,7 +101,6 @@ body {
     border-bottom-left-radius:15px; 
     border-bottom-right-radius:15px;
     border: 1px solid #CCCCCC;
-  
 }
 
 .like{
@@ -142,7 +109,6 @@ body {
     margin:7.5px 0px 7.5px 12px;
     display: inline-block;
     float: left;
-
 }
 
 .like-counter{
@@ -160,24 +126,17 @@ body {
     background-color:#15210a;
     color: white;
     font-size:12px;
-    
 }
 
 .footer .footer-leyend{
     text-align: center;
     margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 
 .btn-default:hover{
-    background-color: #7fc719;
+    background-color: #ff3366;
     color: white;
-}
-
-
-
-
-
-
-
 }

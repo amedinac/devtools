@@ -3,23 +3,22 @@
     <head>
         <title>DevTools</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        
     </head>
     <body>
         <header id="header-container">
             <div class="logo-container">
-                <a href="https://platzi.com/" class="Header-logo">
+                <a href="" class="Header-logo">
                     <img src="img/devtools-logo.png" alt="Platzi.com" width="auto" height="36px">
                 </a>
             </div>
         </header>
-        <div class="header-container search-container">
+        <section class="header-container search-container">
             <div class="search-input">
                 <div class="row">
                     <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3">
@@ -32,8 +31,8 @@
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
             </div>
-        </div>
-        <div class="header-container body-container">
+        </section>
+        <section class="header-container body-container">
             <div class="container">
                 <div class="row tools-container">
                     <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-2  col-lg-12 col-lg-offset-0 ">
@@ -44,7 +43,7 @@
                                <p class="app-link">https://nodejs.org/en</p>
                              </div>
                              <div class="box-footer">
-                                <img id="heart" onclick="liked" class="like" src="img/heart-icon-off.png"></img><div class="like-counter">89</div>
+                                <img id="heart" onclick="liked" class="like" src="img/heart-icon-off.png"></img><div id="counter" class="like-counter">87</div>
                              </div>
                         </div>
                         <div class="panel panel-default">
@@ -226,47 +225,37 @@
                              </div>
                             <div class="box-footer">
                                 <img class="like" src="img/heart-icon-on.png"></img><div class="like-counter">89</div>
-                             </div>
+                            </div>
                         </div>
-
-
-                       
-                    
-                    </div>
+                     </div>
                 </div>
             </div>  
-        </div>
+        </section>
 
         <footer class="footer">
             <div class="container">
                 <p class="footer-leyend">DevTools by Alfredo M.</p>
             </div>
-            
         </footer>
-
-        </body>
+    </body>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        var heart = document.getElementById('heart');
-        heart.addEventListener('click', liked)
-        
+        var heart = document.getElementById('heart')
+        var counter = document.getElementById('counter')
+        toggle = true;
 
         function liked(){
-        heart.src="img/heart-icon-on.png";
+            
+            if (toggle) {
+               heart.src = 'img/heart-icon-on.png'
+               console.log('like')
+            } else {
+                heart.src = 'img/heart-icon-off.png'
+                console.log('dislike')
+            }
+            toggle=!toggle;
         }
-        
 
-        function disliked(){
-        heart.src="img/heart-icon-off.png";
-        }
-
-
-
-
-    
-    
-        
-    </script>
-    
-
+        heart.addEventListener('click', liked, false);
+     </script>
 </html>
